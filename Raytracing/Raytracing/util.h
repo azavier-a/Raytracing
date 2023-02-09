@@ -18,7 +18,7 @@ const double pi = 3.1415926535897932385;
 
 // Utility Functions
 
-inline double degrees_to_radians(double degrees) {
+inline double radians(double degrees) {
   return degrees * 0.0174532925199;
 }
 
@@ -39,7 +39,7 @@ inline double clamp(double x, double min, double max) {
 }
 
 inline double sat(double x) {
-  return clamp(x, 0.0, 1.0);
+  return clamp(x, 0.0, 0.999);
 }
 
 // Common Headers

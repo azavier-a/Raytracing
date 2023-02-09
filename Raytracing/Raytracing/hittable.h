@@ -2,10 +2,14 @@
 #define HITTABLE_H
 
 #include "ray.h"
+#include "util.h"
+
+class material;
 
 struct hit_p {
   point3 p;
   vec3 n;
+  shared_ptr<material> mat_ptr;
   double t;
   bool front_face;
 
